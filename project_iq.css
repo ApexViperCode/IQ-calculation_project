@@ -1,0 +1,38 @@
+*{
+    color: #f3f0f0;
+}
+
+body{
+    height: 100vh;
+  width: 100%;
+   background: linear-gradient(to top, #032681, #000000);   
+}
+a{
+    color: #fffdfd;
+    text-decoration: none;
+}
+.iq{
+       text-shadow: 0 0 19px rgba(56, 189, 248, 0.4);
+    margin-top: 80px;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.text{
+    text-align: center;
+    font-family:sans-serif;
+}
+.button{
+    background-color: rgb(6, 38, 218);
+    color: white;
+    border: none;
+    height: 50px;
+    border-radius: 50px; 
+    width: 500px;
+    margin-left: 33%;
+    margin-right: 25%;
+}
+.button:hover{
+    box-shadow: 0 0 19px rgba(5, 28, 231, 0.967);
+}
+

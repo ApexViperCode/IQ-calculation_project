@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ calculation</title>
+    <style>
+        body{
+             height: 100vh;
+             width: 100%;
+            background: linear-gradient(to top, #032681, #000000);  
+            
+        }
+        .Question{
+
+          display: flex;
+         flex-direction: column;
+          align-items: center;    
+          gap: 15px;
+          direction: rtl;
+        }
+   .row {
+            display: flex;
+            flex-direction: row;      
+            justify-content: center;  
+            align-items: center;
+            gap: 40px; 
+            margin-top: 25px;  
+            direction: rtl;          
+        }
+        .b{
+            color: #000000;
+            border-radius: 20px;
+            background:#fdfeff;
+            box-shadow: 0 0 19px rgba(5, 28, 231, 0.967);
+            
+           margin-top: 80px;
+            height: 50px;
+            width: 1000px;
+            font-size: 25px; 
+            border: none;      
+          
+        }
+        .i1, .i2 {
+         background: #fff;
+         color: black;
+         height: 40px;
+         width: 470px;
+         border-radius: 20px;
+         border: none;
+         cursor: pointer;
+   
+        }
+        .i1:hover,.i2:hover {
+            box-shadow: 0 0 19px rgba(5, 28, 231, 0.967);
+        }
+        .numbers{
+          margin-top: 400px;
+        }
+        .n1,.n2,.n3,.n4,.n5,.n6,.n7,.n8,.n9,.n10,.n11,.n12,.n13,.n14,.n15,.n16,.n17,.n18,.n19,.n20{
+              border: none;
+          
+          height: 35px;
+          width: 35px;
+        border-radius: 5px;
+        background: #000000;
+        color: #fff;
+        cursor: pointer;
+          
+        }
+        .n1:hover,.n2:hover,.n3:hover,.n4:hover,.n5:hover,.n6:hover,.n7:hover,.n8:hover,.n9:hover,.n10:hover,.n11:hover,.n12:hover,.n13,.n14:hover,.n15:hover,.n16:hover,.n17:hover,.n18:hover,.n19:hover,.n20:hover{
+            box-shadow: 0 0 9px rgba(251, 251, 253, 0.967);
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="Question">
+        <button class="b" type="text">إذا كان اليوم الذي يسبق أمس هو الأربعاء، فما هو اليوم الحالي؟</button>
+        </div>
+        <br>
+        <br>
+
+
+<div class="row">
+    <input class="i1" type="button" value="الخميس" onclick="saveAndNext(3, 0, 'Question14.html')">
+    <input class="i1" type="button" value="الجمعة" onclick="saveAndNext(3, 1, 'Question14.html')">
+</div>
+<div class="row">
+    <input class="i2" type="button" value="السبت" onclick="saveAndNext(3, 2, 'Question14.html')">
+    <input class="i2" type="button" value="الأحد" onclick="saveAndNext(3, 3, 'Question14.html')">
+</div>
+
+
+
+
+
+
+
+   <center>
+   <div class="numbers">
+     <a  href="Question1.html"><input class="n1" type="submit" value="1"></a>
+     <a href="Question2.html"><input class="n2" type="submit" value="2"></a>  
+     <a href="Question3.html"><input class="n3" type="submit" value="3"></a>  
+     <a href="Question4.html"><input class="n4" type="submit" value="4"></a>  
+     <a href="Question5.html"><input class="n5" type="submit" value="5"></a>  
+     <a href="Question6.html"><input class="n6" type="submit" value="6"></a>  
+     <a href="Question7.html"><input class="n7" type="submit" value="7"></a>  
+     <a href="Question8.html"><input class="n8" type="submit" value="8"></a>  
+     <a href="Question9.html"><input class="n9" type="submit" value="9"></a>  
+     <a href="Question10.html"><input class="n10" type="submit" value="10"></a>  
+     <a href="Question11.html"><input class="n11" type="submit" value="11"></a>  
+     <a href="Question12.html"><input class="n12" type="submit" value="12"></a>  
+     <a href="Question13.html"><input class="n13" type="submit" value="13"></a>  
+     <a href="Question14.html"><input class="n14" type="submit" value="14"></a>  
+     <a href="Question15.html"><input class="n15" type="submit" value="15"></a>  
+     <a href="Question16.html"><input class="n16" type="submit" value="16"></a>  
+     <a href="Question17.html"><input class="n17" type="submit" value="17"></a>  
+     <a href="Question18.html"><input class="n18" type="submit" value="18"></a>  
+     <a href="Question19.html"><input class="n19" type="submit" value="19"></a>  
+     <a href="Question20.html"><input class="n20" type="submit" value="20"></a>  
+   </div>
+   </center>
+
+
+
+      <script>
+  function saveAndNext(qNum, optIndex, nextUrl) {
+    localStorage.setItem('user_ans_' + qNum, optIndex);
+    window.location.href = nextUrl;
+  }
+</script>
+</body>
+</html>
